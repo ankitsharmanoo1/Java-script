@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .lightapp{
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        figcaption{
+            text-align: center;    }
+    </style>
+</head>
+<body>
+    <h1 id="bulb">
+     LIGHT ON-OFF
+
+    </h1><br>
+    <main class="lightapp" >
+        <figure class="lightstyle">
+            <img src="bulbof.jpg" id="lightid" onclick="tubelight()">
+            <figcaption>
+                <h2>Light on-off</h2>
+            </figcaption>
+        </figure>
+        <!-- <figure class="lightstyle">
+            <img src="bulbof.jpg" id="lightid" onclick="tubelight()">
+            <figcaption>
+                <h2>Light on-off</h2>
+            </figcaption>
+        </figure>
+        <figure class="lightstyle">
+            <img src="bulbof.jpg" id="lightid" onclick="tubelight()">
+            <figcaption>
+                <h2>Light on-off</h2>
+            </figcaption>
+        </figure>
+        <figure class="lightstyle">
+            <img src="bulbof.jpg" id="lightid" onclick="tubelight()">
+            <figcaption>
+                <h2>Light on-off</h2>
+            </figcaption>
+        </figure>
+        <figure class="lightstyle">
+            <img src="bulbof.jpg" id="lightid" onclick="tubelight()">
+            <figcaption>
+                <h2>Light on-off</h2>
+            </figcaption>
+        </figure>
+        <!-- <figure class="lightstyle">
+            <img src="bulbof.jpg" id="lightid" onclick="tubelight()">
+            <figcaption>
+                <h2>Light on-off</h2>
+            </figcaption>
+        </figure> --> -->
+    </main>
+    <script>
+        let tubelight = () =>{
+
+            let bulb = document.getElementById("lightid");
+
+            // console.log(bulb.src);
+            if(bulb.src.match("bulbof.jpg")){
+                 bulb.src = "bulbon.jpg";
+                }
+                else{
+                    bulb.src = "bulbof.jpg";
+                } 
+    }
+    </script>
+</body>
+</html>

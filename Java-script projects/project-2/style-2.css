@@ -1,0 +1,57 @@
+body{
+     font-family: 'Courier New', Courier, monospace;
+}
+.container{
+  border: 1px solid black;
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+.hex_color {
+  border: 1px solid black;
+  text-align: center;
+
+}
+.hex_color h1{
+   font-size: 2rem;
+   text-transform: uppercase;
+   animation: colorchange 5s infinite alternate;
+}
+.hex_color h2{
+  border: 1px solid black;
+  font-size: 2rem;
+  /* text-transform: uppercase; */
+  margin-top: 15%;
+}
+@keyframes colorchange{
+  0%{
+       color: blueviolet;
+  }
+  20%{
+    color: aqua;
+  }
+  40%{
+    color: brown;
+  }
+  60%{
+color: blue;
+  }
+  80%{
+    color: darkolivegreen;
+  }
+ 100%{
+  color: lawngreen;
+ }
+}
+
+  @media (max-width: 480px) {
+    .hex_color h1{
+      font-size: 1.5rem;
+    }
+    .hex_color h2{
+      font-size: 1rem;
+    }
+  }
+  
