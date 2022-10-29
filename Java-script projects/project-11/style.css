@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    background: rgb(47, 255, 210);
+}
+header{
+    background:skyblue;
+}
+button{
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: cadetblue;
+}
+button:hover{
+    background-color: rgba(95, 157, 160, 0.451);
+}
+.container{
+       width: 95%;
+       margin: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0,0, 0.3);
+}
+
+
+.nav button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: burlywood;
+}
+.create-box{
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: azure;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.create-box  textarea{
+           width: 100%;
+           border-radius: 5px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           border: 1px solid lightgray;
+}
+.create-box button{
+    width: fit-content;
+}
+
+.flashcards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.flashcards h2{
+    font-size: 1rem;
+}
+@media(max-width:768px){
+    .fleshcards{
+        margin: auto;
+    }
+    .flashcards{
+        margin-top: 10px;
+        margin-bottom : 10px;
+    }
+
+}
+
+@media(max-width:480px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .create-box{
+        width: 100%;
+    }
+    .flashcards{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

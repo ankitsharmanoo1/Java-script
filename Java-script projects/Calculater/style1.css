@@ -1,0 +1,21 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+* ::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+    background: rgb(red, green, blue);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}

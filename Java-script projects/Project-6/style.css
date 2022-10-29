@@ -1,10 +1,24 @@
 /* .image{
     display: none;
 } */
+header {
 
+    background:black;
+    color: aquamarine;
+    width: auto;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    justify-content: space-between;
+}
+header a{
+    display: inline-flex;
+    justify-content: space-around;
+}
 
 .container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 70%;
     height: 100vh;
     margin: auto;
