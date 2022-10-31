@@ -7,38 +7,81 @@
     <title>Java-Script Project</title>
 </head>
 <style>
-    body{
+
+    
+    .nav{
+         justify-content: space-between;
+        background: black;
+         border-radius: 19px;
+    }
+    
+        .nav ul{
+        overflow:auto;
+    }
+    .nav li{
+        float: right;
+        list-style: none;
+        margin: 13px 20px;
+    }
+    .nav h1{
+
+         color: bisque;
+         width: 100%;
+         height: auto;
+         padding-top: 10px;
+         padding: 3px 3px;
+
+    }
+    .nav li a{
+        padding: 3px 3px;
+        text-decoration: none;
+        color:antiquewhite;
+    }
+    .nav li a:hover{
+        color: black;
         background: skyblue;
     }
-    h1{
-                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                  color:black;
-                  padding: 0%;
-                  margin: 0%;
-                  border: 2px soild black;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
+    .search{
+        float: right;
+        color: whitesmoke;
+        padding: 12px 75px;
     }
-         #ol a{
-            display: inline-block;
-            font-size: 1em;
-            padding: 10px 30px;
-            text-decoration: none;
-            color: black;
-            margin: auto;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            transition: 0.2s;
-         }
-         #ol li a :hover{
-    letter-spacing: 6px;
-}
+
+
+    .nav input{
+        border: 2px solid black;
+        border-radius: 14px;
+     padding: 3px 17px ;
+     width: 129px;
+    }
+
 </style>
 <body>
-       <h1>Java-Script Projects</h1>
+<header>
 
-       <ol id="ol">
+       <nav class="nav">
+         <h1>Java-Script Projects</h1>
+        <ul>    
+                  <li><a href="#">Contact-us</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Home</a></li>
+                  <div class="search">
+
+                        <input type="text" name="search" id="search" placeholder="Search the project.."> 
+                  </div>
+     </ul>
+
+       </nav><br><br> <br>
+</header>
+
+
+
+
+
+
+
+       <!-- <ol id="ol">
            <li><a href="index1.html" target="_blank">BASIC-java-script Program</a></li>
           <li><a href="Java-script projects/project-2/index.html" target="_blank">Project-2</a></li>
           <li><a href="Java-script projects/project-3/index.html" target="_blank">Project-3</a></li>
@@ -51,6 +94,6 @@
 
 
           <li></li>
-       </ol>
+       </ol> -->
 </body>
 </html>
